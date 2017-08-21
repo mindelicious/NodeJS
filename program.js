@@ -13,12 +13,13 @@ process.stdin.on('readable', function() {
                 console.log('Name: ' + process.env.LOGNAME);
                 console.log('Node v: ' + process.version);
                 if (process.platform == 'darwin') {
-                    console.log('This is OS platform');
+                    console.log('This is MacOS platform');
                 } else if (process.platform == 'linux') {
                     console.log('This is Linux platform');
                 } else if (process.platform == 'win32' || process.platform == 'win64') {
                     console.log('This is Windows bro');
-                }
+                } else {
+                    console.log('What kind of OS you have?');
                 break;
             default:
             process.stderr.write('Wrong instruction bro!');
