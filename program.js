@@ -20,6 +20,7 @@ process.stdin.on('readable', function() {
                     console.log('This is Windows bro');
                 } else {
                     console.log('What kind of OS you have?');
+                }
                 break;
             default:
             process.stderr.write('Wrong instruction bro!');
