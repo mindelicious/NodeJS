@@ -1,7 +1,6 @@
 var OSinfo = require('./OSInfo');
 OSinfo.print();
 var clock = require('./clock.js');
-clock.print();
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
