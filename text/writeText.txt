@@ -1,1 +1,1 @@
-cola
+readText.txt, writeText.txt
