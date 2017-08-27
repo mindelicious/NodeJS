@@ -1,7 +1,7 @@
 var OSinfo = require('./OSInfo');
 OSinfo.print();
 var clock = require('./clock.js');
-clock.print();
+
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
@@ -33,7 +33,7 @@ process.stdin.on('readable', function() {
                 clock();
                 break;
             default:
-            process.stderr.write('Wrong instruction bro!');
+            process.stderr.write('Wrong instruction bro!\n');
         };
     }
 });
